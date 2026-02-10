@@ -6,11 +6,27 @@ const ColorMixer = () => {
   const [green, setGreen] = useState(150);
   const [blue, setBlue] = useState(200);
 
+  const rowStyle = {
+    display: "flex",
+    alignItems: "center",
+    gap: "0.5rem",
+  };
+
+  const labelStyle = {
+    minWidth: "20px",
+  };
+
+  const valueStyle = {
+    minWidth: "32px",
+    textAlign: "right",
+    fontSize: "0.85rem",
+    opacity: 0.8,
+  };
+
   return (
     <PlaygroundCard title="Color Mixer" className="playground-interface">
       <p>Adjust RGB sliders to mix colors in real-time.</p>
 
-      {/* Flex column wrapper for three rows */}
       <div
         className="color-sliders"
         style={{
@@ -19,9 +35,9 @@ const ColorMixer = () => {
           gap: "0.5rem",
         }}
       >
-        {/* Row for Red */}
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <span style={{ minWidth: "20px" }}>R:</span>
+        {/* Red */}
+        <div style={rowStyle}>
+          <span style={labelStyle}>R:</span>
           <input
             type="range"
             min="0"
@@ -30,11 +46,12 @@ const ColorMixer = () => {
             onChange={(e) => setRed(Number(e.target.value))}
             style={{ flex: 1 }}
           />
+          <span style={{ ...valueStyle, color: "rgb(239,68,68)" }}>{red}</span>
         </div>
 
-        {/* Row for Green */}
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <span style={{ minWidth: "20px" }}>G:</span>
+        {/* Green */}
+        <div style={rowStyle}>
+          <span style={labelStyle}>G:</span>
           <input
             type="range"
             min="0"
@@ -43,11 +60,12 @@ const ColorMixer = () => {
             onChange={(e) => setGreen(Number(e.target.value))}
             style={{ flex: 1 }}
           />
+          <span style={{ ...valueStyle, color: "rgb(34,197,94)" }}>{green}</span>
         </div>
 
-        {/* Row for Blue */}
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <span style={{ minWidth: "20px" }}>B:</span>
+        {/* Blue */}
+        <div style={rowStyle}>
+          <span style={labelStyle}>B:</span>
           <input
             type="range"
             min="0"
@@ -56,6 +74,7 @@ const ColorMixer = () => {
             onChange={(e) => setBlue(Number(e.target.value))}
             style={{ flex: 1 }}
           />
+          <span style={{ ...valueStyle, color: "rgb(59,130,246)" }}>{blue}</span>
         </div>
       </div>
 

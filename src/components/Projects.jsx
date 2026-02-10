@@ -8,7 +8,7 @@ const projects = [
       "An interactive in-browser visualization engine for graph traversal algorithms. Built from scratch using vanilla JavaScript, it renders a dynamic grid and animates BFS, DFS, and A* step-by-step with adjustable execution speed.",
     stack:
       "HTML • CSS • JavaScript • Algorithms • State Management • DOM Rendering",
-    live: "projects/pathfinding-visualizer/index.html",
+    live: "https://fredokaych.github.io/portfolio/projects/pathfinding-visualizer/index.html",
     github:
       "https://github.com/fredokaych/portfolio/tree/main/projects/pathfinding-visualizer",
   },
@@ -18,7 +18,7 @@ const projects = [
       "A dynamic, interactive dashboard that visualizes school performance data. Built with pure HTML, CSS, and JavaScript, it supports county and level filters, displays KPIs, tabular data, and renders custom charts using the Canvas API.",
     stack:
       "HTML • CSS • JavaScript • Data Visualization • DOM Manipulation • Canvas API",
-    live: "projects/data-dashboard/index.html",
+    live: "https://fredokaych.github.io/portfolio/projects/data-dashboard/index.html",
     github:
       "https://github.com/fredokaych/portfolio/tree/main/projects/data-dashboard",
   },
@@ -28,7 +28,7 @@ const projects = [
       "A progressive web app that functions fully offline, allowing task creation, editing, and deletion. Implements Service Workers for caching and LocalStorage for persistent offline state, with simulated sync when online.",
     stack:
       "HTML • CSS • JavaScript • Service Workers • LocalStorage • PWA Principles",
-    live: "projects/offline-notes/index.html",
+    live: "https://fredokaych.github.io/portfolio/projects/offline-notes/index.html",
     github:
       "https://github.com/fredokaych/portfolio/tree/main/projects/offline-notes",
   },
