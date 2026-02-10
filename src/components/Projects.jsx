@@ -47,8 +47,9 @@ const Projects = () => {
       <div className="section-header">
         <h2 id="projects-header">Projects</h2>
         <p>
-          Stuff I’ve coded, debugged, and shipped. Can build more. Can scale
-          bigger. Only your imagination sets the limits.
+          A selection of projects I’ve designed, built, and shipped. From concept to production, I focus on scalable, maintainable solutions.
+
+          Additional work and full repositories are available on GitHub.
         </p>
       </div>
 
