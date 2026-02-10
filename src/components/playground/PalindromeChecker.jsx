@@ -21,12 +21,7 @@ const PalindromeChecker = () => {
     <PlaygroundCard title="Palindrome Checker" className="playground-interface">
       <p>Enter a word or phrase below to check if it reads the same backward as forward.</p>
       <div className="input-group">
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter a word..."
-        />
+        <input type="text" value={input} onChange={(e) => setInput(e.target.value)} placeholder="Enter a word..." />
         <button className="run-btn" onClick={checkPalindrome}>Run</button>
       </div>
       <div className="status-neutral">{result}</div>

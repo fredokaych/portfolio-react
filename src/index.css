@@ -452,74 +452,129 @@ section {
     color: #64748b;
 }
 
+
 /* =========================================
-   PLAYGROUND
+   PLAYGROUND – STYLED
    ========================================= */
+
 .playground-interface {
     font-family: 'JetBrains Mono', monospace;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    background: linear-gradient(
+        180deg,
+        rgba(34, 197, 94, 0.05),
+        rgba(0, 0, 0, 0.35)
+    );
+    border-radius: 14px;
+    padding: 1.25rem;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.02);
 }
 
+/* Section title */
 .playground-interface h3 {
     font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
 }
 
+/* Input row */
 .input-group {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     margin: 1rem 0;
 }
 
-input[type="text"] {
+/* Input */
+input[type="text"],
+input[type="number"] {
     flex: 1;
-    padding: 0.6rem 0.8rem;
-    border-radius: 6px;
-    border: 1px solid var(--border-color);
-    background: rgba(0, 0, 0, 0.2);
+    padding: 0.75rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    background: rgba(0, 0, 0, 0.45);
     color: var(--text-primary);
     font-family: inherit;
     font-size: 0.9rem;
+    transition: all 0.25s ease;
 }
 
-input[type="text"]:focus {
+input[type="text"]::placeholder
+input[type="number"]::placeholder {
+    color: rgba(148, 163, 184, 0.6);
+}
+
+input[type="text"]:focus
+input[type="number"]:focus {
     outline: none;
-    border-color: var(--accent-primary);
-    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.25);
+    border-color: #22c55e;
+    box-shadow:
+        0 0 0 3px rgba(34, 197, 94, 0.25),
+        0 0 18px rgba(34, 197, 94, 0.15);
+    background: rgba(0, 0, 0, 0.55);
 }
 
+/* Button */
 .run-btn {
-    background: var(--text-primary);
-    color: var(--bg-color);
+    background: linear-gradient(
+        135deg,
+        #22c55e,
+        #16a34a
+    );
+    color: #052e16;
     border: none;
-    padding: 0 1.2rem;
-    border-radius: 6px;
-    font-weight: 600;
+    padding: 0 1.4rem;
+    border-radius: 10px;
+    font-weight: 700;
     cursor: pointer;
-    transition: var(--transition);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    box-shadow:
+        0 6px 18px rgba(34, 197, 94, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.25s ease;
 }
 
 .run-btn:hover {
-    background: #e2e8f0;
+    transform: translateY(-1px);
+    box-shadow:
+        0 10px 26px rgba(34, 197, 94, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
+.run-btn:active {
+    transform: translateY(0);
+    box-shadow:
+        0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+/* Result text */
 #palResult {
-    margin-top: 0.75rem;
+    margin-top: 0.85rem;
     font-size: 0.9rem;
     min-height: 1.4rem;
+    padding-left: 0.25rem;
 }
 
+/* Status styles */
 .status-success {
     color: #22c55e;
+    text-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
 }
 
 .status-error {
     color: #ef4444;
+    text-shadow: 0 0 8px rgba(239, 68, 68, 0.35);
 }
 
 .status-neutral {
-    color: #64748b;
+    color: #94a3b8;
 }
+
+
 
 /* =========================================
    CONTACT & FOOTER

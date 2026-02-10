@@ -20,7 +20,7 @@ const FizzBuzz = () => {
     <PlaygroundCard title="FizzBuzz Tester" className="playground-interface">
       <p>Run FizzBuzz for any number range.</p>
       <div className="input-group">
-        <input type="number" min="1" value={num} onChange={(e) => setNum(Number(e.target.value))} />
+        <input type="text" min="1" value={num} onChange={(e) => setNum(Number(e.target.value))} />
         <button className="run-btn" onClick={runFizzBuzz}>Run</button>
       </div>
       <div className="status-neutral">{result}</div>
