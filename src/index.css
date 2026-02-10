@@ -526,7 +526,7 @@ input[type="number"]:focus {
     );
     color: #052e16;
     border: none;
-    padding: 0 1.4rem;
+    padding: 0.75rem 0.9rem;
     border-radius: 10px;
     font-weight: 700;
     cursor: pointer;
