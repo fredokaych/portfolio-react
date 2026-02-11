@@ -28,9 +28,11 @@ const Lecturers2007 = () => {
                             }}
                         />
 
-
-
                         <h3>{person.name}</h3>
+
+                        {/* Conditionally render phone number if it exists */}
+                        {person.phone && <p className="lecturer-phone">{person.phone}</p>}
+
                         {person.status === "rip" && <span className="rip-label">RIP</span>}
                     </div>
                 ))}

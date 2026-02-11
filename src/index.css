@@ -872,6 +872,7 @@ footer {
 }
 
 /* Card */
+/* Card */
 .lecturer-card {
   background: rgba(0,0,0,0.4);
   border: 1px solid rgba(34,197,94,0.2);
@@ -879,6 +880,10 @@ footer {
   padding: 1rem;
   text-align: center;
   transition: all 0.3s ease;
+  min-height: 280px; /* makes cards taller */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* keeps content at top */
 }
 
 .lecturer-card:hover {
@@ -911,17 +916,43 @@ footer {
   font-size: 0.8rem;
   color: #ef4444;
 }
-.lecturer-photo {
+/* .lecturer-photo {
   width: 100%;
-  height: 150px; /* same height as your placeholder */
-  object-fit: cover; /* fills card nicely without stretching */
+  height: 150px; 
+  object-fit: cover; 
   border-radius: 10px;
   margin-bottom: 0.75rem;
   border: 1px solid rgba(34,197,94,0.2);
   transition: transform 0.3s ease;
-}
+} */
 
 .lecturer-card:hover .lecturer-photo {
   transform: scale(1.05);
 }
 
+/* Placeholder photo / lecturer photo */
+.lecturer-photo,
+.photo-placeholder {
+  width: 100%;
+  height: 180px; /* taller than before */
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  object-fit: cover; /* keeps aspect ratio */
+  border: 1px solid rgba(34,197,94,0.2);
+  transition: transform 0.3s ease;
+}
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .lecturers-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  
+  .lecturer-card {
+    min-height: 260px; /* slightly shorter for mobile */
+  }
+
+  .lecturer-photo,
+  .photo-placeholder {
+    height: 160px; /* keeps proportion */
+  }
+}
