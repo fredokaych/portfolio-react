@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import fadeInSection from "../hooks/fadeInSection";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Hero = () => {
   const sectionRef = fadeInSection();
@@ -157,18 +158,6 @@ const Hero = () => {
   }, []);
 
   return (
-    // <section id="hero" className="hero-section relative overflow-hidden">
-    //   <canvas
-    //     ref={canvasRef}
-    //     id="canvas-bg"
-    //     className="absolute top-0 left-0 w-full h-full"
-    //   />
-    //   <div className="hero-content relative z-10 text-center text-white">
-    //     <h1 className="text-5xl font-bold">Welcome to My Portfolio</h1>
-    //     <p className="mt-4 text-xl">Interactive Hero with constellation effect</p>
-    //   </div>
-    // </section>
-
     <section id="hero" aria-label="Hero section">
       <canvas id="canvas-bg" canvas ref={canvasRef} aria-hidden="true">Your browser does not support HTML5 Canvas</canvas>
       <div className="hero-content fade-in-section" ref={sectionRef}>
@@ -178,10 +167,61 @@ const Hero = () => {
           I build practical, scalable web solutions and interactive digital experiences.
           Let's turn ideas into reality.
         </p>
-        <div className="hero-btns">
+        {/* <div className="hero-btns">
           <a href="#projects" className="btn btn-primary">View Projects</a>
+
           <a href="#contact" className="btn btn-outline">Contact Me</a>
+        </div> */}
+        {/* <div className="hero-btns">
+          <button className="btn btn-primary"
+            onClick={() => {
+              // scroll to projects
+              if (window.location.pathname !== "/") {
+                window.location.href = "/"; // navigate to homepage first
+                setTimeout(() => {
+                  document.getElementById("Projects")?.scrollIntoView({ behavior: "smooth" });
+                }, 100);
+              } else {
+                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            View Projects
+          </button>
+
+          <button className="btn btn-outline"
+            onClick={() => {
+              if (window.location.pathname !== "/") {
+                window.location.href = "/";
+                setTimeout(() => {
+                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                }, 100);
+              } else {
+                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Contact Me
+          </button>
+        </div> */}
+        <div className="hero-btns">
+          <button className="btn btn-primary"
+            onClick={() => {            
+                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });              
+            }}
+          >
+            View Projects
+          </button>
+
+          <button className="btn btn-outline"
+            onClick={() => {              
+                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });              
+            }}
+          >
+            Contact Me
+          </button>
         </div>
+
       </div>
     </section>
   );

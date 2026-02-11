@@ -126,24 +126,35 @@ nav {
     letter-spacing: -0.04em;
 }
 
+/*Kinda duplicate, but for React buttons*/
 .nav-links {
     display: flex;
     gap: 2rem;
 }
 
-.nav-links a {
+.nav-links button {
+    /* --- BUTTON RESET (Required to make it look like a link) --- */
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit; /* Inherits font from the parent */
+    cursor: pointer;      /* Changes cursor to pointer on hover */
+    /* --------------------------------------------------------- */
+
+    /* --- YOUR ORIGINAL STYLES --- */
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-secondary);
     position: relative;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links button:hover,
+.nav-links button.active {
     color: var(--text-primary);
 }
 
-.nav-links a::after {
+.nav-links button::after {
     content: '';
     position: absolute;
     width: 0;
@@ -154,7 +165,7 @@ nav {
     transition: var(--transition);
 }
 
-.nav-links a:hover::after {
+.nav-links button:hover::after {
     width: 100%;
 }
 
@@ -820,3 +831,97 @@ footer {
         text-align: center;
     }
 }
+
+
+
+/* Page Layout */
+.lecturers-page {
+  padding: 3rem 1.5rem 3rem; /* top padding only, no 100vh */
+  background: radial-gradient(circle at top, rgba(34,197,94,0.08), #0f172a);
+  color: var(--text-primary);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hero */
+.lecturers-hero {
+  text-align: center;
+  padding: 1rem;
+}
+
+.lecturers-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Grid */
+.lecturers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Card */
+.lecturer-card {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(34,197,94,0.2);
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.lecturer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(34,197,94,0.2);
+}
+
+/* Placeholder photo */
+.photo-placeholder {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(34,197,94,0.2),
+    rgba(0,0,0,0.6)
+  );
+  margin-bottom: 0.75rem;
+}
+
+/* RIP styling */
+.lecturer-card.rip {
+  border-color: rgba(239,68,68,0.4);
+  opacity: 0.85;
+}
+
+.rip-label {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #ef4444;
+}
+.lecturer-photo {
+  width: 100%;
+  height: 150px; /* same height as your placeholder */
+  object-fit: cover; /* fills card nicely without stretching */
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(34,197,94,0.2);
+  transition: transform 0.3s ease;
+}
+
+.lecturer-card:hover .lecturer-photo {
+  transform: scale(1.05);
+}
+

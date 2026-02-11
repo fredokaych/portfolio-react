@@ -1,27 +1,17 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import LimeBand from './components/LimeBand';
-import Partners from './components/Partners';
-import Projects from './components/Projects';
-import Playground from './components/Playground';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Lecturers2007 from "./pages/Lecturers2007";
 
 export default function App() {
   return (
     <>
       <Header />
-      <main>
-        <Hero />
-        <About />
-        <LimeBand />
-        <Partners />
-        <Projects />
-        <Playground />
-        <Contact />
-
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/57-lecturers" element={<Lecturers2007 />} />
+      </Routes>
       <Footer />
     </>
   );

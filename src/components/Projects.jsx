@@ -1,7 +1,18 @@
 import React from "react";
 import fadeInSection from "../hooks/fadeInSection";
+import { Link } from "react-router-dom";
+
 
 const projects = [
+  {
+    title: "57 Lecturers – Class of 2007",
+    description:
+      "A digital tribute and yearbook page honoring my classmates from Osingo Mixed Secondary School, Class of 2007. Built in React as a responsive alumni gallery experience.",
+    stack:
+      "React • Responsive Grid • Routing • UI Design • Component Architecture",
+    internal: true,
+    route: "/57-lecturers",
+  },
   {
     title: "Pathfinding Algorithm Visualizer",
     description:
@@ -73,21 +84,22 @@ const Projects = () => {
             </p>
 
             <div className="card-links">
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo →
-              </a>
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub →
-              </a>
+              {project.internal ? (
+                <Link to={project.route}>
+                  View Project →
+                </Link>
+              ) : (
+                <>
+                  <a href={project.live} target="_blank" rel="noopener noreferrer">
+                    Live Demo →
+                  </a>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    GitHub →
+                  </a>
+                </>
+              )}
             </div>
+
           </div>
         ))}
       </div>
