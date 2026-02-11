@@ -6,7 +6,7 @@ export const lecturers2007 = [
   { id: 47, name: "Fred Okech", photo: "lecturers/fred-okech.jpeg", status: "alive", phone: "0717905039" },
   { id: 48, name: "Pauline Okech", photo: "lecturers/pauline.jpeg", status: "alive", phone: "0707934481" },
   { id: 10, name: "Samuel Ogutu", photo: "lecturers/samuel-ogutu.jpeg", status: "alive", phone: "0725816613" },
-  { id: 2, name: "Kennedy Mwabe", photo: "lecturers/kennedy-mwabe.jpg", status: "alive", phone: "0728139078" },
+  { id: 2, name: "Kennedy Mwabe", photo: "lecturers/kennedy-mwabe.jpeg", status: "alive", phone: "0728139078" },
   { id: 11, name: "Samuel Maura", photo: "lecturers/samuel-maura.jpeg", status: "alive", phone: "0711120909" },
   { id: 16, name: "Peter Makuge", photo: "lecturers/peter.jpeg", status: "alive", phone: "0724133242" },
   { id: 17, name: "Paul Oyange", photo: "lecturers/paul-oyange.jpeg", status: "alive", phone: "0705750820" },
