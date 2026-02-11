@@ -24,6 +24,7 @@ export const lecturers2007 = [
   { id: 53, name: "Judith Ocholla", photo: "lecturers/judith-ocholla.jpg", status: "alive", phone: "0718270142" },
   { id: 46, name: "Loycer Oode", photo: "lecturers/loycer-oode.jpg", status: "alive", phone: "0743269167" },
   { id: 54, name: "Steve Obilo", photo: "lecturers/corazon.jpg", status: "alive", phone: null },
+
   
   { id: 6, name: "Uhuru James", photo: "lecturers/uhuru.jpg", status: "alive", phone: "0715809224" },
   { id: 4, name: "Collins Omondi", photo: "lecturers/collins.jpg", status: "alive", phone: "0724431758" },
@@ -54,6 +55,7 @@ export const lecturers2007 = [
   { id: 55, name: "Johnson Dio", photo: "lecturers/johnson.jpg", status: "alive", phone: "0716111329" },
   { id: 56, name: "Jerry Jalamo", photo: "lecturers/jared.jpg", status: "alive", phone: "0723066575" },
   { id: 57, name: "Billy Omondi", photo: "lecturers/billy.jpg", status: "alive", phone: "0720223998" },
+  
   { id: 35, name: "George Odhiambo", photo: "lecturers/george-odhiambo.jpg", status: "rip", phone: null },
   { id: 34, name: "Indire", photo: "lecturers/indire.jpg", status: "rip", phone: null },
   { id: 40, name: "Nicholas Olengo", photo: "lecturers/nicholas.jpg", status: "rip", phone: null },
