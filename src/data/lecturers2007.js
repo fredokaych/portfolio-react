@@ -24,7 +24,6 @@ export const lecturers2007 = [
   { id: 53, name: "Judith Ocholla", photo: "lecturers/judith-ocholla.jpg", status: "alive", phone: "0718270142" },
   { id: 46, name: "Loycer Oode", photo: "lecturers/loycer-oode.jpg", status: "alive", phone: "0743269167" },
   { id: 54, name: "Steve Obilo", photo: "lecturers/corazon.jpg", status: "alive", phone: null },
-
   
   { id: 6, name: "Uhuru James", photo: "lecturers/uhuru.jpg", status: "alive", phone: "0715809224" },
   { id: 4, name: "Collins Omondi", photo: "lecturers/collins.jpg", status: "alive", phone: "0724431758" },
@@ -34,9 +33,8 @@ export const lecturers2007 = [
   { id: 13, name: "Ibrahim Ambasa", photo: "lecturers/ibrahim.jpg", status: "alive", phone: "0723624688" },
   { id: 14, name: "Fredrick Odhiambo", photo: "lecturers/fredrick.jpg", status: "alive", phone: null },
   { id: 15, name: "Winnie Ambwara", photo: "lecturers/winnie.jpg", status: "alive", phone: "0725520840" },
-  { id: 18, name: "Opium Guy", photo: "lecturers/opium-guy.jpg", status: "alive", phone: null },
   { id: 20, name: "Linder Ochola", photo: "lecturers/linder.jpg", status: "alive", phone: "0727294944" },
-  { id: 21, name: "Chief Kitagwa I guess", photo: "lecturers/chef-kitagwa.jpg", status: "alive", phone: null },
+  { id: 21, name: "Chief Kitagwa", photo: "lecturers/chef-kitagwa.jpg", status: "alive", phone: null },
   { id: 23, name: "Judith Oyugi", photo: "lecturers/judith-oyugi.jpg", status: "alive", phone: "0720073175" },
   { id: 24, name: "Terry Grace", photo: "lecturers/terry.jpg", status: "alive", phone: "0726114570" },
   { id: 25, name: "Douglas Karisa", photo: "lecturers/douglas.jpg", status: "alive", phone: "0702501282" },
