@@ -85,7 +85,9 @@ const Projects = () => {
 
             <div className="card-links">
               {project.internal ? (
-                <Link to={project.route}>
+                <Link to={project.route} onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                }}>
                   View Project →
                 </Link>
               ) : (
