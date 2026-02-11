@@ -217,14 +217,14 @@ section {
    HERO SECTION
    ========================================= */
 #hero {
-    min-height: 85vh;
+    min-height: 100vh;
     /* Slightly reduced from 90vh */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     /* Visual balance */
 }
 

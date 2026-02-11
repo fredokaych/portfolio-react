@@ -27,7 +27,10 @@ export default function Header() {
         <header>
             <nav aria-label="Main navigation">
                 <div className="logo">
-                    <Link to="/" onClick={() => setMenuOpen(false)}>
+                    <Link to="/" onClick={() => {
+                        setMenuOpen(false);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}>
                         Fred<span className="gradient-text">Okech</span>.
                     </Link>
                 </div>
