@@ -708,13 +708,14 @@ footer {
     background: rgba(15, 23, 42, 0.9);
     color: #fff;
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: clamp(0.7rem, 0.9vw, 0.8rem);
     text-align: center;
     opacity: 0;
     transform: translateY(100%);
     transition: all 0.3s ease;
     border-radius: 0.25rem;
 }
+
 
 .logo-container:hover .logo-info {
     opacity: 1;
@@ -756,6 +757,14 @@ footer {
     }
 }
 
+/*Disable links on mobile*/
+@media (hover: none) {
+    .logo-container {
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
 
 
 /* Fade mask effect */
@@ -783,6 +792,29 @@ footer {
             #0f172a 0%,
             rgba(15, 23, 42, 0) 100%);
 }
+.logo-container {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-info p {
+    margin: 0;
+}
+
+.visit-link {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #22c55e;
+}
+/* @media (hover: none) {
+    .logo-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
 
 /* =========================================
    RESPONSIVE
@@ -933,10 +965,10 @@ footer {
 .lecturer-photo,
 .photo-placeholder {
   width: 100%;
-  height: 180px; /* taller than before */
+  height: 180px;
   border-radius: 10px;
   margin-bottom: 0.75rem;
-  object-fit: cover; /* keeps aspect ratio */
+  object-fit: cover;
   border: 1px solid rgba(34,197,94,0.2);
   transition: transform 0.3s ease;
 }
