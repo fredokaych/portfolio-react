@@ -167,55 +167,22 @@ const Hero = () => {
           I build practical, scalable web solutions and interactive digital experiences.
           Let's turn ideas into reality.
         </p>
-        {/* <div className="hero-btns">
-          <a href="#projects" className="btn btn-primary">View Projects</a>
+        <p className="hero-stack">
+          React • Node.js • Python
+        </p>
 
-          <a href="#contact" className="btn btn-outline">Contact Me</a>
-        </div> */}
-        {/* <div className="hero-btns">
-          <button className="btn btn-primary"
-            onClick={() => {
-              // scroll to projects
-              if (window.location.pathname !== "/") {
-                window.location.href = "/"; // navigate to homepage first
-                setTimeout(() => {
-                  document.getElementById("Projects")?.scrollIntoView({ behavior: "smooth" });
-                }, 100);
-              } else {
-                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-          >
-            View Projects
-          </button>
-
-          <button className="btn btn-outline"
-            onClick={() => {
-              if (window.location.pathname !== "/") {
-                window.location.href = "/";
-                setTimeout(() => {
-                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-                }, 100);
-              } else {
-                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-          >
-            Contact Me
-          </button>
-        </div> */}
         <div className="hero-btns">
           <button className="btn btn-primary"
-            onClick={() => {            
-                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });              
+            onClick={() => {
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             View Projects
           </button>
 
           <button className="btn btn-outline"
-            onClick={() => {              
-                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });              
+            onClick={() => {
+              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             Contact Me
@@ -223,6 +190,11 @@ const Hero = () => {
         </div>
 
       </div>
+      <div className="scroll-indicator">
+        {/* <span>Scroll</span> */}
+        <div className="scroll-arrow"></div>
+      </div>
+
     </section>
   );
 };

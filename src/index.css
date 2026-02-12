@@ -8,7 +8,7 @@
     --card-bg: rgba(30, 41, 59, 0.6);
     --card-hover-bg: rgba(30, 41, 59, 0.8);
     --text-primary: #f1f5f9;
-    --text-secondary: #94a3b8;
+    --text-secondary: #b8c5d6;
 
     --accent-primary: #22c55e;
     --accent-secondary: #16a34a;
@@ -267,6 +267,13 @@ section {
     max-width: 540px;
     margin-bottom: 2rem;
 }
+.hero-stack {
+    font-size: 0.8rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #64748b; /* Slightly muted */
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+}
 
 /* Buttons */
 .btn {
@@ -275,7 +282,6 @@ section {
     justify-content: center;
     padding: 0.75rem 1.75rem;
     border-radius: 8px;
-    /* Less round, more modern/tech */
     font-weight: 600;
     font-size: 0.95rem;
     transition: var(--transition);
@@ -286,25 +292,61 @@ section {
 .btn-primary {
     background: var(--accent-primary);
     color: #052e16;
-    box-shadow: 0 4px 14px var(--accent-glow);
+    box-shadow: 0 4px 10px var(--accent-glow);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.5);
+    box-shadow: 0 6px 14px rgba(34, 197, 94, 0.5);
 }
 
 .btn-outline {
     background: transparent;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--accent-secondary);
     margin-left: 1rem;
     color: var(--text-primary);
 }
 
 .btn-outline:hover {
-    border-color: var(--text-primary);
+    transform: translateY(-2px);
+    border-color: var(--accent-primary);
     background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 6px 14px rgba(34, 197, 94, 0.5);
 }
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.6;
+    animation: fadeInScroll 1.5s ease forwards;
+}
+
+/* Arrow */
+.scroll-arrow {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-left: 3px solid var(--accent-primary);
+    border-bottom: 3px solid var(--accent-primary);
+    transform: rotate(-45deg);
+    animation: arrowMove 1.6s infinite ease-in-out;
+}
+
+/* Smooth floating motion */
+@keyframes arrowMove {
+    0% { transform: rotate(-45deg) translateY(0); opacity: 0.6; }
+    50% { transform: rotate(-45deg) translateY(6px); opacity: 1; }
+    100% { transform: rotate(-45deg) translateY(0); opacity: 0.6; }
+}
+
+@keyframes fadeInScroll {
+    from { opacity: 0; }
+    to { opacity: 0.6; }
+}
+
+
 
 /* ================================
    LIME BAND SECTION
