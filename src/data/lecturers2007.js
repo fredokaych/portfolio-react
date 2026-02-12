@@ -24,6 +24,8 @@ export const lecturers2007 = [
   { id: 53, name: "Judith Ocholla", photo: "lecturers/judith-ocholla.jpg", status: "alive", phone: "0718270142" },
   { id: 46, name: "Loycer Oode", photo: "lecturers/loycer-oode.jpg", status: "alive", phone: "0743269167" },
   { id: 54, name: "Steve Obilo", photo: "lecturers/corazon.jpg", status: "alive", phone: null },
+  { id: 36, name: "George Ngiela", photo: "lecturers/george-ngiela.jpg", status: "alive", phone: "0726404374" },
+  { id: 25, name: "Douglas Karisa", photo: "lecturers/douglas.jpg", status: "alive", phone: "0702501282" },
 
   
   { id: 6, name: "Uhuru James", photo: "lecturers/uhuru.jpg", status: "alive", phone: "0715809224" },
@@ -38,13 +40,11 @@ export const lecturers2007 = [
   { id: 21, name: "Chief Kitagwa", photo: "lecturers/chef-kitagwa.jpg", status: "alive", phone: null },
   { id: 23, name: "Judith Oyugi", photo: "lecturers/judith-oyugi.jpg", status: "alive", phone: "0720073175" },
   { id: 24, name: "Terry Grace", photo: "lecturers/terry.jpg", status: "alive", phone: "0726114570" },
-  { id: 25, name: "Douglas Karisa", photo: "lecturers/douglas.jpg", status: "alive", phone: "0702501282" },
   { id: 27, name: "Joseph Amimo", photo: "lecturers/amimo.jpg", status: "alive", phone: "0726273051" },
   { id: 30, name: "Michael Waga", photo: "lecturers/michael.jpg", status: "alive", phone: null },
   { id: 31, name: "Josephine Odila", photo: "lecturers/josephine-desky-wa-millicent.jpg", status: "alive", phone: "0705599911" },
   { id: 32, name: "Millicent Opere", photo: "lecturers/millicent.jpg", status: "alive", phone: "0719787685" },
   { id: 33, name: "Diana Ayoro", photo: "lecturers/ayoro.jpg", status: "alive", phone: null },
-  { id: 36, name: "George Ngiela", photo: "lecturers/george-ngiela.jpg", status: "alive", phone: "0726404374" },
   { id: 37, name: "Kennedy Ouma", photo: "lecturers/kennedy-ouma.jpg", status: "alive", phone: null },
   { id: 39, name: "Joyce John", photo: "lecturers/joyce.jpg", status: "alive", phone: null },
   { id: 43, name: "Reuben Ochuka", photo: "lecturers/reuben-ochuka.jpg", status: "alive", phone: "0797984212" },
