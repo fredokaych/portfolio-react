@@ -698,7 +698,7 @@ footer {
 /* Track */
 .logo-track {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     width: max-content;
     animation: scroll-left 40s linear infinite;
 }
