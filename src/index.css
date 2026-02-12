@@ -1043,6 +1043,7 @@ footer {
     .lecturer-card {
         min-height: 260px;
         /* slightly shorter for mobile */
+        padding: 0.5rem;
     }
 
     .lecturer-photo,
