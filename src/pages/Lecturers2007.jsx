@@ -18,23 +18,32 @@ const Lecturers2007 = () => {
                         key={person.id}
                         className={`lecturer-card ${person.status === "rip" ? "rip" : ""}`}
                     >
-                        <img
-                            src={person.photo}
-                            alt={person.name}
-                            className="lecturer-photo"
-                            loading="lazy"
-                            onError={(e) => {
-                                e.currentTarget.src = "lecturers/placeholder.jpg";
-                            }}
-                        />
+                        <div className="photo-wrapper">
+                            <span className="badge-number">{person.id}</span>
+
+                            <img
+                                src={person.photo}
+                                alt={person.name}
+                                className="lecturer-photo"
+                                loading="lazy"
+                                onError={(e) => {
+                                    e.currentTarget.src = "lecturers/placeholder.jpg";
+                                }}
+                            />
+                        </div>
 
                         <h3>{person.name}</h3>
 
-                        {/* Conditionally render phone number if it exists */}
+                        {person.nickname && (
+                            <p className="lecturer-nickname">"{person.nickname}"</p>
+                        )}
+
                         {person.phone && <p className="lecturer-phone">{person.phone}</p>}
 
                         {person.status === "rip" && <span className="rip-label">RIP</span>}
                     </div>
+
+
                 ))}
             </section>
         </main>

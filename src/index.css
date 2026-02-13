@@ -1032,6 +1032,48 @@ footer {
     border: 1px solid rgba(34, 197, 94, 0.2);
     transition: transform 0.3s ease;
 }
+/* Wrapper to position badge */
+.photo-wrapper {
+    position: relative;
+}
+
+/* Rounded number badge */
+.badge-number {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+/* Nickname styling */
+.lecturer-nickname {
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.7;
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+/* .lecturer-nickname {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    margin-bottom: 6px;
+} */
+
 
 /* Responsive adjustments for mobile */
 @media (max-width: 600px) {
