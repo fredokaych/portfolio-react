@@ -33,7 +33,7 @@ export const lecturers2007 = [
   { id: 15, name: "Winnie Ambwara", photo: "lecturers/winnie.jpeg", status: "alive", phone: "0725520840" },
   { id: 14, name: "Fredrick Odhiambo", photo: "lecturers/fredrick.jpeg", status: "alive", phone: null },
   { id: 24, name: "Terry Grace", photo: "lecturers/terry.jpeg", status: "alive", phone: "0726114570" },
-  { id: 56, name: "Jerry Jalamo", photo: "lecturers/jared.jpeg", status: "alive", phone: "0723066575" },
+  { id: 56, name: "Jared Okoth", photo: "lecturers/jared.jpeg", status: "alive", phone: "0723066575" },
   { id: 23, name: "Judith Oyugi", photo: "lecturers/judith-oyugi.jpeg", status: "alive", phone: "0720073175" },
   { id: 37, name: "Kennedy Ouma", photo: "lecturers/kennedy-ouma.jpeg", status: "alive", phone: null },
   { id: 39, name: "Joyce John", photo: "lecturers/joyce.jpeg", status: "alive", phone: null },
@@ -44,11 +44,10 @@ export const lecturers2007 = [
 
   
   { id: 6, name: "Uhuru James", photo: "lecturers/uhuru.jpg", status: "alive", phone: "0715809224" },
-  { id: 7, name: "Jane Uhuru", photo: "lecturers/jane.jpg", status: "alive", phone: null },
   { id: 8, name: "Anne Ajuma", photo: "lecturers/anne.jpg", status: "alive", phone: null },
   { id: 13, name: "Ibrahim Ambasa", photo: "lecturers/ibrahim.jpg", status: "alive", phone: "0723624688" },
   { id: 20, name: "Linder Ochola", photo: "lecturers/linder.jpg", status: "alive", phone: "0727294944" },
-  { id: 21, name: "Chief Kitagwa", photo: "lecturers/chef-kitagwa.jpg", status: "alive", phone: null },
+  { id: 21, name: "Richard Kitagwa", photo: "lecturers/chef-kitagwa.jpg", status: "alive", phone: null },
   { id: 30, name: "Michael Waga", photo: "lecturers/michael.jpg", status: "alive", phone: null },
   { id: 31, name: "Josephine Odila", photo: "lecturers/josephine-desky-wa-millicent.jpg", status: "alive", phone: "0705599911" },
   { id: 32, name: "Millicent Opere", photo: "lecturers/millicent.jpg", status: "alive", phone: "0719787685" },
@@ -56,7 +55,7 @@ export const lecturers2007 = [
   { id: 49, name: "Obachi", photo: "lecturers/obachi.jpg", status: "alive", phone: null },
   { id: 51, name: "Benter Uhuru", photo: "lecturers/benter.jpg", status: "alive", phone: "0770687144" },
   
-  { id: 35, name: "George Odhiambo", photo: "lecturers/george-odhiambo.jpg", status: "rip", phone: null },
+  { id: 35, name: "George Ouma", photo: "lecturers/george-odhiambo.jpg", status: "rip", phone: null },
   { id: 34, name: "Indire", photo: "lecturers/indire.jpg", status: "rip", phone: null },
   { id: 40, name: "Nicholas Olengo", photo: "lecturers/nicholas.jpg", status: "rip", phone: null },
 ];
