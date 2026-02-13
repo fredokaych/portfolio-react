@@ -38,6 +38,9 @@ export const lecturers2007 = [
   { id: 37, name: "Kennedy Ouma", photo: "lecturers/kennedy-ouma.jpeg", status: "alive", phone: null },
   { id: 39, name: "Joyce John", photo: "lecturers/joyce.jpeg", status: "alive", phone: null },
   { id: 50, name: "James Odongo", photo: "lecturers/james.jpeg", status: "alive", phone: "0711364876" },
+  { id: 55, name: "Johnson Dio", photo: "lecturers/johnson.jpeg", status: "alive", phone: "0716111329" },
+  { id: 43, name: "Reuben Ochuka", photo: "lecturers/reuben-ochuka.jpeg", status: "alive", phone: "0797984212" },
+  { id: 52, name: "George Olala", photo: "lecturers/george-olala.jpeg", status: "alive", phone: "0712660435" },
 
   
   { id: 6, name: "Uhuru James", photo: "lecturers/uhuru.jpg", status: "alive", phone: "0715809224" },
@@ -50,11 +53,8 @@ export const lecturers2007 = [
   { id: 31, name: "Josephine Odila", photo: "lecturers/josephine-desky-wa-millicent.jpg", status: "alive", phone: "0705599911" },
   { id: 32, name: "Millicent Opere", photo: "lecturers/millicent.jpg", status: "alive", phone: "0719787685" },
   { id: 33, name: "Diana Ayoro", photo: "lecturers/ayoro.jpg", status: "alive", phone: null },
-  { id: 43, name: "Reuben Ochuka", photo: "lecturers/reuben-ochuka.jpg", status: "alive", phone: "0797984212" },
   { id: 49, name: "Obachi", photo: "lecturers/obachi.jpg", status: "alive", phone: null },
   { id: 51, name: "Benter Uhuru", photo: "lecturers/benter.jpg", status: "alive", phone: "0770687144" },
-  { id: 52, name: "George Olala", photo: "lecturers/george-olala.jpg", status: "alive", phone: "0712660435" },
-  { id: 55, name: "Johnson Dio", photo: "lecturers/johnson.jpg", status: "alive", phone: "0716111329" },
   
   { id: 35, name: "George Odhiambo", photo: "lecturers/george-odhiambo.jpg", status: "rip", phone: null },
   { id: 34, name: "Indire", photo: "lecturers/indire.jpg", status: "rip", phone: null },
