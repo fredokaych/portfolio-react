@@ -5,15 +5,6 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "57 Lecturers – Class of 2007",
-    description:
-      "A digital tribute and yearbook page honoring my classmates from Osingo Mixed Secondary School, Class of 2007. Built in React as a responsive alumni gallery experience.",
-    stack:
-      "React • Responsive Grid • Routing • UI Design • Component Architecture",
-    internal: true,
-    route: "/57-lecturers",
-  },
-  {
     title: "Victor Okuna – Campaign Website (In Progress)",
     description:
       "A fully responsive, modern campaign website built in React for Victor Okuna, a candidate for Member of Parliament in Suna East. Features: volunteer signup, donation integration, contact form, and social media links. (In progress)",
@@ -21,6 +12,15 @@ const projects = [
       "React • React Router • Responsive Design • AOS Animations • UI/UX Design",
     live: "https://fredokaych.github.io/okuna/",
     github: "https://github.com/fredokaych/okuna",
+  },
+  {
+    title: "57 Lecturers – Class of 2007",
+    description:
+      "A digital tribute and yearbook page honoring my classmates from Osingo Mixed Secondary School, Class of 2007. Built in React as a responsive alumni gallery experience.",
+    stack:
+      "React • Responsive Grid • Routing • UI Design • Component Architecture",
+    internal: true,
+    route: "/57-lecturers",
   },
   {
     title: "Pathfinding Algorithm Visualizer",
