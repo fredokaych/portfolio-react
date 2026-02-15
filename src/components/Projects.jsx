@@ -9,7 +9,7 @@ const projects = [
     description:
       "A fully responsive, modern campaign website built in React for Victor Okuna, a candidate for Member of Parliament in Suna East. Features: volunteer signup, donation integration, contact form, and social media links. (In progress)",
     stack:
-      "React • React Router • Responsive Design • AOS Animations • UI/UX Design",
+      "React • React Router • Responsive Design • UI/UX Design",
     live: "https://fredokaych.github.io/okuna/",
     github: "https://github.com/fredokaych/okuna",
   },
