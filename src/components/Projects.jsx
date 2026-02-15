@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Pathfinding Algorithm Visualizer",
     description:
-      "An interactive in-browser visualization engine for graph traversal algorithms. Built from scratch using vanilla JavaScript, it renders a dynamic grid and animates BFS, DFS, and A* step-by-step with adjustable execution speed.",
+      "An interactive in-browser visualization engine for graph traversal algorithms. Built using vanilla JavaScript, it renders a dynamic grid and animates BFS, DFS, and A* step-by-step with adjustable speed.",
     stack:
       "JavaScript • Algorithms • State Management • DOM Rendering",
     live: "https://fredokaych.github.io/portfolio/projects/pathfinding-visualizer/index.html",
