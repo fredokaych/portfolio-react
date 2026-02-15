@@ -14,11 +14,20 @@ const projects = [
     route: "/57-lecturers",
   },
   {
+    title: "Victor Okuna – Campaign Website (In Progress)",
+    description:
+      "A fully responsive, modern campaign website built in React for Victor Okuna, a candidate for Member of Parliament in Suna East. Features: volunteer signup, donation integration, contact form, and social media links. (In progress)",
+    stack:
+      "React • React Router • Responsive Design • AOS Animations • UI/UX Design",
+    live: "https://fredokaych.github.io/okuna/",
+    github: "https://github.com/fredokaych/okuna",
+  },
+  {
     title: "Pathfinding Algorithm Visualizer",
     description:
       "An interactive in-browser visualization engine for graph traversal algorithms. Built from scratch using vanilla JavaScript, it renders a dynamic grid and animates BFS, DFS, and A* step-by-step with adjustable execution speed.",
     stack:
-      "HTML • CSS • JavaScript • Algorithms • State Management • DOM Rendering",
+      "JavaScript • Algorithms • State Management • DOM Rendering",
     live: "https://fredokaych.github.io/portfolio/projects/pathfinding-visualizer/index.html",
     github:
       "https://github.com/fredokaych/portfolio/tree/main/projects/pathfinding-visualizer",
